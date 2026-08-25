@@ -1,0 +1,174 @@
+<title>Política de cookies &middot; Langa &amp; Infiesta Asesores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --stone-50:#F1EFEA; --stone-100:#E4E0D5; --stone-200:#D2CBB8;
+    --ink-900:#1C2230; --ink-700:#454B58; --ink-500:#6E7280;
+    --accent-700:#A6812E; --accent-800:#7C5F1F; --accent-050:#F1E7D2;
+    --line:rgba(28,34,48,0.14); --surface:#FFFFFE;
+    --shadow: 0 1px 0 rgba(28,34,48,0.06); --radius: 3px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --stone-50:#14171C; --stone-100:#1C2029; --stone-200:#2A2F3A;
+      --ink-900:#EDEBE4; --ink-700:#C7C3B8; --ink-500:#94918A;
+      --accent-700:#D2A94A; --accent-800:#A6812E; --accent-050:#2E2718;
+      --line:rgba(237,235,228,0.16); --surface:#1E222B;
+      --shadow: 0 1px 0 rgba(0,0,0,0.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --stone-50:#14171C; --stone-100:#1C2029; --stone-200:#2A2F3A;
+    --ink-900:#EDEBE4; --ink-700:#C7C3B8; --ink-500:#94918A;
+    --accent-700:#D2A94A; --accent-800:#A6812E; --accent-050:#2E2718;
+    --line:rgba(237,235,228,0.16); --surface:#1E222B;
+    --shadow: 0 1px 0 rgba(0,0,0,0.4);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--stone-50);color:var(--ink-900);font-family:"Work Sans", ui-sans-serif, system-ui, sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55;}
+  h1,h2,h3{font-family:"Spectral", Georgia, serif;font-weight:600;text-wrap:balance;margin:0;letter-spacing:-0.01em;}
+  a{color:inherit;}
+  img,svg{display:block;max-width:100%;}
+  .mono{font-family:"IBM Plex Mono", ui-monospace, monospace;}
+  .eyebrow{font-family:"IBM Plex Mono", ui-monospace, monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent-700);font-weight:500;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px;}
+  @media (max-width:640px){.wrap{padding:0 18px;}}
+
+  header{position:sticky;top:0;z-index:50;background:var(--stone-50);border-bottom:1px solid var(--line);}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:20px;}
+  .word{display:flex;flex-direction:column;line-height:1.05;text-decoration:none;}
+  .word .name{font-family:"Spectral",serif;font-weight:700;font-size:1.28rem;color:var(--ink-900);white-space:nowrap;}
+  .word .name .amp{color:var(--accent-700);font-style:italic;}
+  .word .sub{font-family:"IBM Plex Mono",monospace;font-size:0.62rem;letter-spacing:0.16em;color:var(--ink-500);margin-top:3px;}
+  nav.primary{display:flex;gap:2px;align-items:center;}
+  nav.primary a{font-size:0.86rem;font-weight:600;letter-spacing:0.02em;padding:9px 14px;border-radius:999px;text-decoration:none;color:var(--ink-700);transition:background .15s ease, color .15s ease;}
+  nav.primary a:hover{background:var(--stone-100);color:var(--ink-900);}
+  .call-btn{display:flex;align-items:center;gap:8px;font-size:0.82rem;font-weight:600;padding:9px 16px;border-radius:999px;border:1px solid var(--ink-900);text-decoration:none;color:var(--ink-900);white-space:nowrap;transition:background .15s ease, color .15s ease;}
+  .call-btn:hover{background:var(--ink-900);color:var(--stone-50);}
+  .menu-toggle{display:none;background:none;border:1px solid var(--line);border-radius:8px;width:42px;height:42px;align-items:center;justify-content:center;cursor:pointer;flex-direction:column;gap:4px;}
+  .menu-toggle span, .menu-toggle::before, .menu-toggle::after{content:"";display:block;width:18px;height:2px;background:var(--ink-900);}
+  @media (max-width:860px){nav.primary{display:none;} .call-btn span.label{display:none;} .menu-toggle{display:flex;}}
+
+  /* ---------- legal content ---------- */
+  .legal{padding:56px 0 88px;}
+  .breadcrumb{display:flex;gap:8px;align-items:center;font-family:"IBM Plex Mono",monospace;font-size:0.74rem;color:var(--ink-500);margin-bottom:28px;letter-spacing:0.04em;}
+  .breadcrumb a{color:var(--ink-500);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--accent-700);text-decoration:underline;}
+  .legal h1{font-size:clamp(1.8rem,3.6vw,2.4rem);max-width:22ch;}
+  .prose{max-width:68ch;margin-top:32px;}
+  .prose h2{font-family:"Spectral",serif;font-size:1.1rem;font-weight:600;margin-top:32px;margin-bottom:10px;}
+  .prose h2:first-child{margin-top:0;}
+  .prose p{color:var(--ink-700);margin:0 0 16px;}
+  .prose strong{color:var(--ink-900);}
+  .cookie-table{width:100%;border-collapse:collapse;margin:8px 0 20px;font-size:0.86rem;}
+  .cookie-table th, .cookie-table td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top;}
+  .cookie-table th{background:var(--stone-100);font-family:"IBM Plex Mono",monospace;font-size:0.66rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-500);font-weight:600;}
+  .cookie-table td{color:var(--ink-700);}
+
+  footer{padding:56px 0 36px;border-top:1px solid var(--line);}
+  .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding-bottom:32px;border-bottom:1px solid var(--line);}
+  @media (max-width:760px){.footer-grid{grid-template-columns:1fr 1fr;}}
+  .footer-grid h4{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-500);margin-bottom:14px;font-weight:700;}
+  .footer-grid a, .footer-grid p{display:block;font-size:0.9rem;color:var(--ink-700);text-decoration:none;margin-bottom:9px;}
+  .footer-grid a:hover{color:var(--accent-700);}
+  .footer-word{margin-top:14px;}
+  .footer-word .name{font-family:"Spectral",serif;font-weight:700;font-size:1.1rem;}
+  .footer-word .name .amp{color:var(--accent-700);font-style:italic;}
+  .footer-word .sub{font-family:"IBM Plex Mono",monospace;font-size:0.6rem;letter-spacing:0.14em;color:var(--ink-500);margin-top:2px;}
+  .footer-bottom{display:flex;justify-content:space-between;padding-top:22px;font-size:0.78rem;color:var(--ink-500);flex-wrap:wrap;gap:10px;font-family:"IBM Plex Mono",monospace;}
+
+  .whatsapp-fab{position:fixed;right:22px;bottom:22px;z-index:60;background:#25D366;color:#fff;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px -8px rgba(0,0,0,0.4);text-decoration:none;}
+</style>
+
+<header>
+  <div class="wrap topbar">
+    <a class="word" href="index.html">
+      <span class="name">LANGA <span class="amp">&amp;</span> INFIESTA</span>
+      <span class="sub">ASESORES SL</span>
+    </a>
+    <nav class="primary">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#nosotros">Quiénes somos</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a class="call-btn" href="https://wa.me/34639181314" target="_blank" rel="noopener"><span aria-hidden="true">💬</span><span class="label">Escríbenos · 639 18 13 14</span></a>
+      <button class="menu-toggle" aria-label="Abrir menú"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="legal">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Inicio</a> <span>／</span> <span>Política de cookies</span></p>
+      <h1>Política de cookies</h1>
+      <div class="prose">
+        <p>Esta página describe las cookies que utiliza este sitio web, agrupadas por categoría.</p>
+
+        <h2>Necesarias <span class="mono" style="font-size:0.7rem;color:var(--ink-500);">— siempre activas</span></h2>
+        <p>Las cookies necesarias son imprescindibles para las funciones básicas del sitio web, que no puede funcionar correctamente sin ellas.</p>
+        <table class="cookie-table">
+          <tr><th>Cookie</th><th>Duración</th><th>Descripción</th></tr>
+          <tr><td>cookieyes-consent</td><td>1 año</td><td>CookieYes establece esta cookie para recordar las preferencias de consentimiento de los usuarios.</td></tr>
+        </table>
+
+        <h2>Funcionales</h2>
+        <p>Ayudan a realizar ciertas funcionalidades, como compartir el contenido del sitio web. Actualmente no hay cookies de este tipo.</p>
+
+        <h2>Analíticas</h2>
+        <p>Se utilizan para comprender cómo interactúan los visitantes con el sitio web.</p>
+        <table class="cookie-table">
+          <tr><th>Cookie</th><th>Duración</th><th>Descripción</th></tr>
+          <tr><td>_ga</td><td>1 año 1 mes 4 días</td><td>Google Analytics establece esta cookie para calcular los datos de los visitantes, de las sesiones y de las campañas.</td></tr>
+          <tr><td>_ga_*</td><td>1 año 1 mes 4 días</td><td>Google Analytics utiliza esta cookie para almacenar y contar las visitas a las páginas.</td></tr>
+        </table>
+
+        <h2>De rendimiento</h2>
+        <p>Se utilizan para comprender y analizar los índices de rendimiento clave del sitio web. Actualmente no hay cookies de este tipo.</p>
+
+        <h2>Publicitarias</h2>
+        <p>Se utilizan para mostrar a los visitantes anuncios personalizados. Actualmente no hay cookies de este tipo.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-word">
+          <div class="name">LANGA <span class="amp">&amp;</span> INFIESTA</div>
+          <div class="sub">ASESORES SL</div>
+        </div>
+        <p style="margin-top:14px;">La respuesta a tus necesidades.</p>
+      </div>
+      <div>
+        <h4>Contacta con nosotros</h4>
+        <a href="https://wa.me/34639181314" target="_blank" rel="noopener">Escríbenos</a>
+        <a href="https://maps.google.com/maps?q=31+Calle+Dionisio+Inca+Yupanqui,+Madrid,+28043">Visítanos</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Política de privacidad</a>
+        <a href="cookies.html">Política de cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Langa &amp; Infiesta Asesores SL &mdash; Madrid</span>
+      <span>Propuesta de rediseño &middot; maqueta de ejemplo</span>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/34639181314?text=Hola%2C%20hablo%20con%20Langa%20%26%20Infiesta%3F" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.6 19L4 20z"/><path d="M9 11h.01M12 11h.01M15 11h.01" stroke-width="2.2"/></svg>
+</a>
